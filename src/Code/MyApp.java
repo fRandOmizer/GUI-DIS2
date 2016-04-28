@@ -1,12 +1,15 @@
 package Code;
 
 /**
- * Created by zanri_000 on 26-Apr-16.
+ * This is my app, how awesome is that!
+ * Anyway, this is user Class where user sets the windows layout
  */
 public class MyApp {
     public static void main(String[] args)
     {
+        //creating the object
         WindowSystem obj = new WindowSystem(800,550);
-        //obj.drawLine(0.2, 0.3, 0.8, 0.7);
+        //drawing line
+        obj.drawLine(0.2f, 0.3f, 0.8f, 0.7f);
     }
 }

@@ -6,35 +6,61 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by zanri_000 on 26-Apr-16.
+ * Simple data class for windows
  */
 public class SimpleWindow {
 
+    /**
+     * List of elements
+     */
     private List<Point2D> elements;
+    /**
+     * Color of window
+     */
     private Color color;
 
+    /**
+     * Constructor
+     */
     public SimpleWindow()
     {
+        //basic setting up
         this.elements=new ArrayList<>();
-        color = new Color(0,0,0);
+        this.color = new Color(0,0,0);
     }
 
-    public void SetPoints(List<Point2D> elements)
+    /**
+     * setter for list of points
+     * @param elements list of points
+     */
+    public void setPoints(List<Point2D> elements)
     {
         this.elements = elements;
     }
 
-    public List<Point2D> GetPoints()
+    /**
+     * getter for list of points
+     * @return list of points
+     */
+    public List<Point2D> getPoints()
     {
         return elements;
     }
 
-    public void SetColor(List<Point2D> elements)
+    /**
+     * setter for color of window
+     * @param color Color of window
+     */
+    public void setColor(Color color)
     {
-        this.elements = elements;
+        this.color = color;
     }
 
-    public Color GetColor()
+    /**
+     * getter for color of window
+     * @return color of window
+     */
+    public Color getColor()
     {
         return this.color;
     }
