@@ -10,6 +10,8 @@ public class MyApp {
         //creating the object
         WindowSystem obj = new WindowSystem(800,550);
         //drawing line
-        obj.drawLine(0.2f, 0.3f, 0.8f, 0.7f);
+//        obj.drawLine(0.2f, 0.3f, 0.8f, 0.7f);
+//        obj.drawLine(0.2f, 0.7f, 0.8f, 0.3f);
+        obj.drawRect(0.2f, 0.7f, 0.8f, 0.3f);
     }
 }
