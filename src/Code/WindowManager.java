@@ -1,53 +1,38 @@
 package Code;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 /**
  * Created by lanwenlin on 5/6/16.
  */
-public class WindowManager extends de.rwth.hci.Graphics.GraphicsEventSystem {
+public class WindowManager {
 
 
     /**
-     * Array list for window objects
+     * Constructor for our class
+     *
+     * @param i Width
+     * @param j height
      */
-    private List<SimpleWindow> windows;
+    public WindowManager(int i, int j) {
 
-    /**
-     * Size of App workspace
-     */
-    private int height;
-    private int width;
-    /**
-    *  title of the window manager
-    **/
-    private char[] title;
 
-    /*
-    * Constructor for our class
-    *
-    * @param i Width
-    * @param j height
-    */
-    public WindowManager(int i, int j, char[] t)
-    {
-        //calling super class constructor
-        super(i,j);
+        //creating the object
+        WindowSystem obj = new WindowSystem(900,450);
+        //drawing line
+//        obj.drawLine(0.2f, 0.3f, 0.8f, 0.7f);
 
-        //initializing basic stuff
-        this.width=i;
-        this.height=j;
-        this.title=t;
-        this.windows = new ArrayList<>();
+        //drawing Rect
+//        obj.drawRect(2, 2, 8, 7);
 
+
+
+        obj.drawRect(0.2f, 0.3f, 0.8f, 0.7f);
+
+        obj.drawRect(0.4f, 0.1f, 0.6f, 0.9f);
+
+        obj.drawRect(0.5f, 0.2f, 0.7f, 0.6f);
     }
 
-    /**
-     * Override method that manage all drawing
-     */
-    @Override
-    public void handlePaint() {
 
-    }
 }

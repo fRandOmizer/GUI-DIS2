@@ -83,61 +83,19 @@ public class WindowSystem extends de.rwth.hci.Graphics.GraphicsEventSystem {
                     convertToWindowResolution(this.width,(float)topLeft.getX()),
                     convertToWindowResolution(this.height,(float)topLeft.getY()));
 
-//            this.drawRect(convertToWindowResolution(this.width,(float)topLeft.getX()),
-//                    convertToWindowResolution(this.height,(float)topLeft.getY()),
-//                    convertToWindowResolution(this.width,(float)bottomRight.getX()),
-//                    convertToWindowResolution(this.height,(float)bottomRight.getY()));
-//
             this.fillRect(convertToWindowResolution(this.width,(float)topLeft.getX()),
                     convertToWindowResolution(this.height,(float)topLeft.getY()),
                     convertToWindowResolution(this.width,(float)bottomRight.getX()),
                     convertToWindowResolution(this.height,(float)bottomRight.getY()));
 
 
-//
-//            this.setColor(Color.blue);
         }
 
     }
 
     /**
-     * Drawing line
-     * @param StartX start X position
-     * @param StartY start Y position
-     * @param EndX   end X position
-     * @param EndY   end Y position
-     */
-
-//    public void drawLine(float StartX, float StartY, float EndX, float EndY){
-//
-//        //checking input values, if they are in <0,1>
-//        if   ((StartX < 0.0f || StartX > 1.0f)
-//            ||(StartY < 0.0f || StartY > 1.0f)
-//            ||(EndX < 0.0f || EndX > 1.0f)
-//            ||(EndY < 0.0f || EndY > 1.0f))
-//        {
-//            throw new IllegalArgumentException("Parameter out of range <0;1>");
-//        }
-//
-//        //creating simple window
-//        SimpleWindow window = new SimpleWindow();
-//
-//        //creating two points
-//        Point2D start = new Point2D.Float(StartX, StartY );
-//        Point2D end = new Point2D.Float(EndX, EndY);
-//
-//        //creating list for two points
-//        List<Point2D> points = new ArrayList<>();
-//        //adding two points
-//        points.add(start);
-//        points.add(end);
-//
-//        //adding points to window
-//        window.setPoints(points);
-//
-//        //adding window to windows
-//        windows.add(window);
-//    }
+    * drawing rectagles
+    **/
 
     public void drawRect(float StartX, float StartY, float EndX, float EndY){
 
@@ -171,54 +129,6 @@ public class WindowSystem extends de.rwth.hci.Graphics.GraphicsEventSystem {
     }
 
 
-    /**
-     * Drawing Rect
-     * @param topLeftX top left X position
-     * @param topLeftY top left Y position
-     * @param bottomRightX   bottom right X position
-     * @param bottomRightY   bottom right Y position
-     */
-
-//    public void drawRect(int topLeftX, int topLeftY, int bottomRightX, int bottomRightY) {
-//
-//        this.drawLine((float)topLeftX, (float)topLeftY, (float)bottomRightX, (float)bottomRightY);
-//
-//        //checking input values, if they are in <0,1>
-//        if   ((topLeftX < 0.0f || topLeftX > 1.0f)
-//                ||(topLeftY < 0.0f || topLeftY > 1.0f)
-//                ||(bottomRightX < 0.0f || bottomRightX > 1.0f)
-//                ||(bottomRightY < 0.0f || bottomRightY > 1.0f))
-//        {
-//            throw new IllegalArgumentException("Parameter out of range <0;1>");
-//        }
-//
-//
-//        SimpleWindow window = new SimpleWindow();
-//
-//        //creating 2 points for rect
-//        Point2D topLeft = new Point2D.Float(topLeftX, topLeftY );
-//        Point2D bottomRight = new Point2D.Float(bottomRightX, bottomRightY );
-//
-//
-////        Point2D topLeft = new Point2D.Float(topLeftX, topLeftY );
-////        Point2D topRight = new Point2D.Float(bottomRightX, topLeftY );
-////        Point2D bottomRight = new Point2D.Float(bottomRightX, bottomRightY );
-////        Point2D bottomLeft = new Point2D.Float(topLeftX, bottomRightY);
-//
-//        //creating list for two points
-//        List<Point2D> points = new ArrayList<>();
-//        //adding two points
-//        points.add(topLeft);
-////        points.add(topRight);
-//        points.add(bottomRight);
-////        points.add(bottomLeft);
-//
-//        //adding points to window
-//        window.setPoints(points);
-//
-//        //adding window to windows
-//        windows.add(window);
-//    }
 
 
 
