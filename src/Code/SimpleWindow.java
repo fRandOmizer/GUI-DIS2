@@ -4,6 +4,7 @@ import java.awt.geom.Point2D;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Simple data class for windows
@@ -14,19 +15,6 @@ public class SimpleWindow {
      * List of elements
      */
     private List<Point2D> elements;
-
-//    /**
-//     * size
-//     */
-//    private double height;
-//    private double width;
-
-//    /**
-//     * position
-//     */
-//    private double positionX;
-//    private double positionY;
-
 
     /**
      * Color of window
@@ -40,7 +28,13 @@ public class SimpleWindow {
     {
         //basic setting up
         this.elements=new ArrayList<>();
-        this.color = new Color(44, 63, 150);  //testing color change (blue)
+
+        //creating random color every simple window
+        Random rand = new Random();
+        float r = rand.nextFloat();
+        float g = rand.nextFloat();
+        float b = rand.nextFloat();
+        this.color = new Color(r, g, b);
     }
 
     /**
@@ -70,12 +64,6 @@ public class SimpleWindow {
         this.color = color;
     }
 
-//    public void setSizeWithCoord(double height, double width, double setX, double setY) {
-//        this.height = height;
-//        this.width = width;
-//        this.positionX = setX;
-//        this.positionY = setY;
-//    }
 
     /**
      * getter for color of window
